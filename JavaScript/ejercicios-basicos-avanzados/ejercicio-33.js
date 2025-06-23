@@ -1,0 +1,18 @@
+const capitals = {
+    Spain: 'Madrid',
+    France: 'Paris',
+    Italy: 'Rome',
+    Germany: 'Berlin',
+    Portugal: 'Lisbon',
+    Poland: 'Warsaw',
+    Greece: 'Athens',
+    Austria: 'Vienna',
+    Hungary: 'Budapest',
+    Ireland: 'Dublin'
+};
+
+function getCapital(country) {
+    return (Object.keys(capitals).includes(country)) ? `La capital de ${country} es ${capitals[country]}`: `${country} no está.`;
+}
+
+console.log(getCapital("Greece"));
