@@ -1,3 +1,5 @@
+// Contador de repeticiones: Crea una función que nos devuelva el número de veces que se repite cada una de las palabras que lo conforma.
+
 const words = [
     'code',
     'repeat',

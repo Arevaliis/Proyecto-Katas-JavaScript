@@ -1,3 +1,6 @@
+// Crea una función que reciba un array de objetos representando a varios miembros de los X-Men y su año de aparición. La función debe retornar el miembro más antiguo.
+// Utiliza este array para probar tu función.
+
 const xMen = [
     { name: 'Wolverine', year: 1974 },
     { name: 'Cyclops', year: 1963 },
@@ -13,17 +16,14 @@ const xMen = [
 
 function findOldestXMen(xMen){
     let anyo = 2500;
+    let nombre  = ""
     for (const personaje of xMen) {
         if(personaje.year < anyo){
             anyo = personaje.year;
+            nombre = personaje.name
         }
     }
-
-    for (const personaje of xMen) {
-        if(anyo == personaje.year){
-            return `El ${personaje.name} es uno de los primeros miembros de los Xmen. Su primera aparicion fue en ${anyo}`;
-        }
-    }
+    return `${nombre} es uno de los primeros miembros de los Xmen. Su primera aparicion fue en ${anyo}`;
 }
 
 console.log(findOldestXMen(xMen));

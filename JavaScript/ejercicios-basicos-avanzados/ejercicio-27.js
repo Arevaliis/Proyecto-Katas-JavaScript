@@ -1,3 +1,6 @@
+// Utiliza un bucle para encontrar la serie de dibujos animados más antigua en el array y guarda su nombre en una variable.
+// Imprime el nombre por consola.
+
 const cartoons = [
     { name: 'Bugs Bunny', debut: 1938 },
     { name: 'SpongeBob SquarePants', debut: 1999 },
@@ -11,12 +14,14 @@ const cartoons = [
     { name: "Dexter's Laboratory", debut: 1996 }
 ];
 
-let serieMasAntigua = 2500;
+let anyo = 2500;
+let nombre = "";
 
 for (const serie of cartoons) {
-    if (serie.debut < serieMasAntigua ){
-        serieMasAntigua = serie.debut;
+    if (serie.debut < anyo ){
+        anyo = serie.debut;
+        nombre = serie.name;
     }    
 }
 
-console.log(serieMasAntigua);
+console.log(`La serie mas antigua es ${nombre}, tuvo su debut en el año ${anyo}`);

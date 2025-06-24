@@ -1,3 +1,6 @@
+// Filtra una lista de canciones para crear una playlist que solo contenga canciones de rock que duren más de 5 minutos.
+// Utiliza un bucle para lograrlo e imprime la nueva playlist por consola.
+
 const songs = [
     { title: 'Bohemian Rhapsody', genre: 'Rock', duration: 5.55 },
     { title: 'Stairway to Heaven', genre: 'Rock', duration: 7.58 },

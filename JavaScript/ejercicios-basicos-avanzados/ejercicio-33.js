@@ -1,3 +1,7 @@
+// Desarrolla una función que reciba un país por parámetro y devuelva su capital.
+// Utiliza un objeto para almacenar los países y sus capitales.
+// La función debe manejar casos en los que el país no esté en la lista, devolviendo un mensaje adecuado.
+
 const capitals = {
     Spain: 'Madrid',
     France: 'Paris',
@@ -16,3 +20,4 @@ function getCapital(country) {
 }
 
 console.log(getCapital("Greece"));
+console.log(getCapital("Croacia"));

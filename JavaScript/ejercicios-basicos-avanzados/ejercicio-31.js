@@ -1,3 +1,5 @@
+// Dada una lista de artistas con sus influencias, utiliza bucles anidados para listar todos los artistas y sus influencias directas e imprime cada par por consola.
+
 const artists = [
     { name: 'Kurt Cobain', influences: ['The Beatles', 'Pixies', 'Lead Belly'] },
     { name: 'David Bowie', influences: ['Little Richard', 'Chuck Berry', 'The Velvet Underground'] },

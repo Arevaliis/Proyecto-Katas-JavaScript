@@ -1,3 +1,7 @@
+// Escribe una función que calcule el promedio de duración de una lista de películas.
+// Recibe un array de películas, cada una con su duración en minutos.
+// La función debe devolver el promedio de duración de todas las películas.
+
 const movies = [
     { title: 'Inception', duration: 148 },
     { title: 'The Dark Knight', duration: 152 },
@@ -12,11 +16,11 @@ const movies = [
 ];
 
 function averageMovieDuration(movies) {
-    let duracionTotal = 0.0;
+    let duracionTotal = 0;
     for (const movie of movies) {
         duracionTotal += movie.duration;
     }
-    return `El promedio de la duración de todas las peliculas es de ${(duracionTotal / movies.length).toFixed(2)} min.`;
+    return `El promedio de la duración de todas las peliculas es de ${duracionTotal / movies.length} min.`;
 }
 
 console.log(averageMovieDuration(movies));

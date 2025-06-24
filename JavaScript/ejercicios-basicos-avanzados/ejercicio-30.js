@@ -1,3 +1,6 @@
+// Dada una lista de canciones, clasifícalas en un objeto donde las claves sean los géneros y los valores sean arrays de canciones de ese género.
+// Utiliza bucles para estructurar este objeto e imprime el resultado por consola.
+
 const tracks = [
     { title: 'Enter Sandman', genre: 'Metal' },
     { title: 'Back in Black', genre: 'Rock' },

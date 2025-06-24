@@ -1,3 +1,5 @@
+// Dada una lista de álbumes de música, utiliza un bucle para sumar todas las duraciones solo de los álbumes de rock y luego imprime el total de estas duraciones por consola.
+
 const albums = [
     { title: 'Led Zeppelin IV', genre: 'Rock', duration: 42.19 },
     { title: 'The Dark Side of the Moon', genre: 'Rock', duration: 42.49 },

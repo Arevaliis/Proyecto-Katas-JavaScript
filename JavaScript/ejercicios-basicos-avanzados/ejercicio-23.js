@@ -1,3 +1,7 @@
+// Usa un bucle para crear 3 arrays de películas filtrados por categorías.
+// Pelicula pequeña -> menos de 100 minutos, película mediana -> más de 100 minutos y menos de 200 y pelicula grande -> más de 200 minutos.
+// Imprime cada array por consola.
+
 const movies = [
     { name: "Titan A.E.", durationInMinutes: 130 },
     { name: "Nightmare before Christmas", durationInMinutes: 225 },
@@ -24,7 +28,6 @@ for (const peli of movies) {
         peliculaLarga.push(peli.name);
     }
 }
-
 
 console.log(peliculaCorta);
 console.log(peliculaMedia);

@@ -1,3 +1,6 @@
+//Buscar la palabra más larga: Completa la función que tomando un array de strings como argumento devuelva el más largo, 
+// en caso de que dos strings tenga la misma longitud deberá devolver el primero.
+
 const avengers = [   
     "Hulk",
     "Thor",
@@ -8,14 +11,11 @@ const avengers = [
 ];
 
 function findLongestWord(stringList) {
-    let palabra;
-    let totalLetras = 0;
+    let palabra = "";
 
-    for (let index = 0; index < stringList.length; index++) {
-        let avenger = stringList[index];
-        if (avenger.length > totalLetras){
+    for (const avenger of stringList) {
+        if (avenger.length > palabra.length){
             palabra = avenger;
-            totalLetras = avenger.length;
         }        
     }
     return palabra;

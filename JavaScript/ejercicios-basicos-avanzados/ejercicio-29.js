@@ -1,3 +1,6 @@
+// Agrupa las películas de Star Wars por década de lanzamiento en un objeto donde las claves son las décadas y los valores son arrays de películas.
+// Utiliza bucles para lograrlo e imprime el objeto final por consola.
+
 const starWarsMovies = [
     { title: 'A New Hope', releaseYear: 1977 },
     { title: 'The Empire Strikes Back', releaseYear: 1980 },

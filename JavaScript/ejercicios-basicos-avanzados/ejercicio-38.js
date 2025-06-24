@@ -1,3 +1,6 @@
+// Dado el siguiente código usa forof y forin para hacer la media del volumen de todos los sonidos favoritos que tienen los usuarios.
+// Es decir, la media de volumen de todos los volumenes juntos.
+
 const users = [
     {
         name: "Alberto",
@@ -34,11 +37,13 @@ const users = [
 ];
 
 let totalSonido = 0;
+let contador = 0
 
 for (const user of users) {
     for (const key in user.favoritesSounds) {
         totalSonido += user.favoritesSounds[key].volume;
+        contador += 1;
     }
 }
 
-console.log(totalSonido);
+console.log(`La media del volumen de todos los sonidos favoritos que tienen los usuarios es de ${totalSonido / contador}`);

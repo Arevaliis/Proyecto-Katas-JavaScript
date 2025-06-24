@@ -1,3 +1,7 @@
+// Usa un for para remplazar todas las comidas que no sean veganas con las frutas del array de frutas.
+// Recuerda no usar frutas duplicadas.
+// Finalmente, imprime el array resultante.
+
 const fruits = ["Strawberry", "Banana", "Orange", "Apple"];
 
 const foodSchedule = [
@@ -11,7 +15,7 @@ const foodSchedule = [
 
 for (const food of foodSchedule) {
     if (!food.isVegan && fruits.length){
-        food["name"] = fruits.pop();
+        food.name = fruits.pop();
         food.isVegan = true;
     }    
 }

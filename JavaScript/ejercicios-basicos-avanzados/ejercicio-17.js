@@ -1,3 +1,5 @@
+// For...in: Usa un for...in para imprimir por consola los datos del alienígena.
+
 const alien = {
     name: 'Xenomorph',
     species: 'Xenomorph XX121',

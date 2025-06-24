@@ -1,3 +1,6 @@
+// Dada una lista de películas, cuenta cuántas son de antes del año 2000 y cuántas son posteriores, utilizando un bucle.
+// Imprime ambos conteos por consola.
+
 const movies = [
     { title: 'The Matrix', releaseYear: 1999 },
     { title: 'Star Wars: Episode IV – A New Hope', releaseYear: 1977 },
