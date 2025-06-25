@@ -16,11 +16,11 @@ console.log(year);
 
 const fruits = ['Banana', 'Strawberry', 'Orange'];
 
-const [platano, fresa, naranja] = fruits;
+const [fruit1, fruit2, fruit3] = fruits;
 
-console.log(platano);
-console.log(fresa);
-console.log(naranja);
+console.log(fruit1);
+console.log(fruit2);
+console.log(fruit3);
 
 // 1.3 En base al siguiente javascript, usa destructuring para crear 2
 // variables igualandolo a la función e imprimiendolo por consola.

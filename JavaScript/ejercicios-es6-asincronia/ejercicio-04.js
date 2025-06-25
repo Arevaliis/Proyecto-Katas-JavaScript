@@ -34,7 +34,7 @@ const streamers1 = [
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
 
-const streamersConU = streamers.filter(streamer => streamer.name.includes("u"));
+const streamersConU = streamers1.filter(streamer => streamer.name.includes("u"));
 console.log(streamersConU);
 
 // 4.5 utiliza .filter() para generar un nuevo array con los streamers que incluyan

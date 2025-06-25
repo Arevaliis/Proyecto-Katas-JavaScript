@@ -18,7 +18,7 @@ ir consiguiendo pokemons aleatorios dentro de unos límites.
 
 const mostraPokemon = async () => {
     try{
-        const numeroRandom = Math.ceil(Math.random() * 152); 
+        const numeroRandom = Math.floor(Math.random() * 152); 
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${numeroRandom}`);
         const datos = await res.json();
 
@@ -32,7 +32,7 @@ const mostraPokemon = async () => {
         img.style.top = "30%";
         img.style.left = "650px";
     }catch(error){
-        console.error();
+        console.error(error);
     }
 }
 

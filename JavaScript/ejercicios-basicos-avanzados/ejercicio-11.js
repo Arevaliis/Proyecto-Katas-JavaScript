@@ -11,15 +11,17 @@ const mixedElements = [
     8,
     "Hola mundo",
 ];
-function averageWord(list) {
-    let total = 0;
 
-    for (const n of list) {
-        if (typeof(n) == "number" || isFinite(n) ){
-            total += Number(n);
+function averageWord(list){
+    let total = 0;
+    for (const element of list){
+        if (typeof element === "number"){
+            total += element;
+        }else{
+            total += element.length
         }
     }
-    return total;
+    return total / list.length;
 }
 
-console.log("Suma total: " + averageWord(mixedElements));
+console.log("Promedio total: " + (averageWord(mixedElements).toFixed(2)));

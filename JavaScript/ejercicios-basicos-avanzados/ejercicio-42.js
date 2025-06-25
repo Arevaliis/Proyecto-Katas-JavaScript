@@ -10,12 +10,11 @@ const fantasticFour = [
     "La cosa"
 ];
 
-function swap(indice1, indice2){
-    let valor1 = fantasticFour[indice1];
-    let valor2 = fantasticFour[indice2];
-    fantasticFour[indice1] = valor2; 
-    fantasticFour[indice2] = valor1;
-    return fantasticFour
+function swap(list, i1, i2){
+    let valor1 = list[i1];
+    list[i1] = list[i2]; 
+    list[i2] = valor1;
+    return list
 }
 
-console.log(swap(0, 3));
+console.log(swap(fantasticFour, 0, 3));

@@ -18,10 +18,11 @@ const starWarsMovies = [
 const peliculasPorAnyo = {};
 
 for (const pelicula of starWarsMovies) {
-    if (!peliculasPorAnyo.hasOwnProperty(pelicula.releaseYear)){
-        peliculasPorAnyo[pelicula.releaseYear] = [pelicula.title];
+    const decada = Math.floor(pelicula.releaseYear / 10) * 10
+    if (!peliculasPorAnyo.hasOwnProperty(decada)){
+        peliculasPorAnyo[decada] = [pelicula.title];
     }else{
-        peliculasPorAnyo[pelicula.releaseYear].push(pelicula.title);
+        peliculasPorAnyo[decada].push(pelicula.title);
     }
 }
 

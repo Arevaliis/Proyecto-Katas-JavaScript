@@ -15,11 +15,11 @@ const actors = [
 ];
 
 function calculateActorsAges(actors) {
-    const ageActors = {};
+    const ageActors = []
     const anyo = new Date().getFullYear();
     
     for (const actor of actors) {
-        ageActors[actor.name] = anyo - actor.born;
+        ageActors.push({"name": actor.name, "age": anyo - actor.born})
     }
     return ageActors;
 }
